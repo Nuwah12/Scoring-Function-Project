@@ -6,7 +6,7 @@ DISCO
 |Gene
  |PDB
   |ligand file, receptor file, etc.
-
+  
 For each ligand-receptor pair, docking is performed and RMSD calculated from original crystal strucutre given in PDB folder
 Smina calls (lines 49-57) have specific information on parameters and such
 """
