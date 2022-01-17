@@ -34,7 +34,6 @@ def main():
 
 			# Simple iterative search for ligand/target files
 			for g in os.listdir(): 
-				print(g)
 				if "_LIG" in g or "_LIG0" in g:
 					ligand_file = g
 					print("ligand file = {}".format(ligand_file))
@@ -96,7 +95,7 @@ def main():
 						out.write("Pose " + str(i) + ": " + str(r) + "\n")
 						i+=1
 			except:
-				continue		
+				print("Error in concatenating files . . . retry")		
 			cmd.delete(ligand_file)
 			cmd.delete(target_file)	
 
