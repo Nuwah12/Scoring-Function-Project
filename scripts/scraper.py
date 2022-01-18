@@ -1,6 +1,12 @@
 import os
 import pandas as pd
 
+"""
+Once again, this script depends on the file structure outlined in autodockER.py
+
+This scrapes the interaction terms, computes RMSDs, and scrapes affinities
+"""
+
 DEFAULT_DIR = "/home/noah/Desktop/refined-set"
 def main():
 	termfile = None
