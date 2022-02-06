@@ -62,11 +62,11 @@ def getTerms(termfile, pose):
 				hbond.append(line[5])
 			elif pose_count > pose:
 				break
-	comp.append(gauss)
-	comp.append(posgauss)
-	comp.append(repulsion)
-	comp.append(hydrophobic)
-	comp.append(hbond)
+	comp.append(sum(gauss))
+	comp.append(sum(posgauss))
+	comp.append(sum(repulsion))
+	comp.append(sum(hydrophobic))
+	comp.append(sum(hbond))
 
 	return comp
 
